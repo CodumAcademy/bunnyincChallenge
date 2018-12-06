@@ -1,0 +1,30 @@
+{
+  "name": "BunnyInc-Backend-Challenge",
+  "version": "1.0.0",
+  "description": "Challenge the talented and creative minds in competitive programming",
+  "main": "index.js",
+  "scripts": {
+    "start": "babel-node ./src/index.js",
+    "migrate": "babel-node ./src/services/Migrations/index.js"
+  },
+  "engines": {
+    "node": "9"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CodumAcademy/bunnyincChallenge"
+  },
+  "author": "Fundacion Rappi",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "6.24.1"
+  },
+  "dependencies": {
+    "csv-parser": "^2.1.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "sqlite3": "^4.0.4"
+  }
+}

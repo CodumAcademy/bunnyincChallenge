@@ -5,6 +5,15 @@ El código del programa en index.js lee un archivo CSV e inserta su contenido en
 El participante o equipo que logre el menor tiempo de inserción de los registros en la tabla sera el ganador del reto.
 
 
-## Para correr el programa ejecute los siguientes comandos:
-* npm install
-* npm run start
+### Para instalar los paquetes:
+```sh
+$ npm install
+```
+### Para limpiar la tabla:
+```sh
+$ npm run migrate
+```
+### Para llenar la tabla con el CSV:
+```sh
+$ npm run start
+```
