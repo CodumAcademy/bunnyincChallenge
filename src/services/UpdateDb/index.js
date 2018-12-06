@@ -1,12 +1,15 @@
 import sqlite3 from 'sqlite3'
+import path from 'path'
+
+const pathDb = path.resolve(__dirname, '../Migrations/visitors.db')
 
 class AppDB {
   constructor() {
-    this.db = new sqlite3.Database(':memory:', (err) => {
+    this.db = new sqlite3.Database(pathDb, (err) => {
       if (err) {
-        console.log('Could not connect to database', err)
+        console.log('Error en la conexión', err)
       } else {
-        console.log('Connected to the in-memory SQlite database.');
+        console.log('Sentencia Ejecutada.');
       }
     })
   }
